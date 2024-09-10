@@ -10,6 +10,7 @@ import { DeleteComponent } from './delete/delete.component';
 import { EcategoryComponent } from './ecategory/ecategory.component';
 import { GcategoryComponent } from './gcategory/gcategory.component';
 import { HomeComponent } from './home/home.component';
+import { SocialComponent } from './social/social.component';
 
 
 const routes: Routes = [
@@ -18,33 +19,37 @@ const routes: Routes = [
     component:HomeComponent
   },
   {
-    path:"product/:id",
-    component:SingleproductComponent
-  },
-  {
-    path:"category/Women",
-    component:CategorylistComponent
-  },
-  {
-    path:"category/Electronics",
-    component:EcategoryComponent
-  },
-  {
-    path:"category/Groceries",
-    component:GcategoryComponent
-  },
-  {
-    path:"create",
-    component:CreateComponent
-  },
-  {
-    path:"update",
-    component:UpdateComponent
-  },
-  {
-    path:"delete",
-    component:DeleteComponent
+    path : "social",
+    component:SocialComponent
   }
+  // {
+  //   path:"product/:id",
+  //   component:SingleproductComponent
+  // },
+  // {
+  //   path:"category/Women",
+  //   component:CategorylistComponent
+  // },
+  // {
+  //   path:"category/Electronics",
+  //   component:EcategoryComponent
+  // },
+  // {
+  //   path:"category/Groceries",
+  //   component:GcategoryComponent
+  // },
+  // {
+  //   path:"create",
+  //   component:CreateComponent
+  // },
+  // {
+  //   path:"update",
+  //   component:UpdateComponent
+  // },
+  // {
+  //   path:"delete",
+  //   component:DeleteComponent
+  // }
 ];
 
 @NgModule({

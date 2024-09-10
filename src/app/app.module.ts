@@ -15,6 +15,7 @@ import { GcategoryComponent } from './gcategory/gcategory.component';
 import { EcategoryComponent } from './ecategory/ecategory.component';
 import {ReactiveFormsModule,FormsModule} from '@angular/forms';
 import { HomeComponent } from './home/home.component';
+import { SocialComponent } from './social/social.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,8 @@ import { HomeComponent } from './home/home.component';
     DeleteComponent,
     GcategoryComponent,
     EcategoryComponent,
-    HomeComponent
+    HomeComponent,
+    SocialComponent
   ],
   imports: [
     BrowserModule,
