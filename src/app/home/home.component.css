@@ -6,30 +6,60 @@
     margin: 0;
   }
   
-  .marquee {
-    overflow: hidden;
-  }
-  
-  .marquee-content {
-    display: flex;
-    animation: scrolling 50s linear infinite;
-  }
-  
-  .marquee-item {
-    /* flex: 0 0 16vw; */
-    margin: 0 1vw;
-  /*   flex: 0 0 20vw; */
-  /*   margin: 0 2vw; */
-  }
-  
-  .marquee-item img {
-    display: block;
+  .marquee-wrapper {
+    position: relative;
     width: 100%;
-  /*   padding: 0 20px; */
-  }
-  
-  @keyframes scrolling {
-    0% { transform: translateX(0); }
-    100% { transform: translatex(-144vw); }
-  }
+    /* height: 150px; Adjust height as needed */
+    overflow: hidden;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 50px;
+}
+
+.marquee-inner {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    width: 200%; /* Twice the width of the viewport to ensure seamless loop */
+    animation: marquee 2s linear infinite; /* Adjust duration to control speed */
+}
+
+.marquee-item {
+    display: inline-block;
+    margin-right: 30px; /* Space between images */
+}
+
+.marquee-item img {
+    height: auto;
+    width: 20px; /* Adjust width as needed */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+.hero__images-wrapper {
+  /* position: fixed; Keeps the wrapper in view while scrolling */
+  /* top: 50px; Adjust as needed */
+  /* width: 100%; Adjust as needed */
+  /* white-space: nowrap; Prevent images from wrapping */
+}
+
+.hero__image-wrapper {
+  /* display: inline-block; */
+  margin-right: 10px; /* Space between images */
+}
+
+/* .hero__image-wrapper img {
+  display: block;
+  width: 100px; 
+  height: auto;
+} */
+
   

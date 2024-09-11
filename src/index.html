@@ -70,6 +70,15 @@
     href="https://pixeldeck.in/wp-content/litespeed/css/e486930ec0fcbcd1accf6e8e599d1b37.css?ver=f4a3a">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="profile" href="https://gmpg.org/xfn/11">
+
+  <script>
+    document.addEventListener('scroll', () => {
+      const scrollPosition = window.scrollY;
+      const heroWrapper = document.querySelector('.hero__images-wrapper');
+      const speed = 0.25; // Adjust the speed of horizontal movement
+      heroWrapper.style.transform = `translateX(-${scrollPosition * speed}px)`;
+    });
+  </script>
   <!-- <title>Pixeldeck - Digital Marketing Agency</title> -->
   <!-- <meta name="description"
     content="Pixeldeck is a digital marketing agency based in India. We provide low-cost social media and marketing solutions to small and medium-sized businesses.">
@@ -306,11 +315,15 @@
   <script type="text/javascript" charset="utf-8" defer="" async=""
     src="chrome-extension://lnaahdmijnjnmgaalacdgakieangpjgp/inject-scripts/set-global.js"
     data-params="{&quot;name&quot;:&quot;__jsons&quot;,&quot;value&quot;:[]}"></script>
+
+    
 </head>
 
 <body
   class="body home page-template page-template-elementor_header_footer page page-id-2031 wp-custom-logo elementor-default elementor-template-full-width elementor-kit-5 elementor-page elementor-page-2031 e--ua-isTouchDevice e--ua-blink e--ua-chrome e--ua-webkit"
   data-new-gr-c-s-check-loaded="14.1193.0" data-gr-ext-installed="">
+
+  
 
   <app-root></app-root>
   
@@ -333,6 +346,8 @@
     // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/r88pea43'
     (function () { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator'); ic('update', w.intercomSettings); } else { var d = document; var i = function () { i.c(arguments); }; i.q = []; i.c = function (args) { i.q.push(args); }; w.Intercom = i; var l = function () { var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://widget.intercom.io/widget/r88pea43'; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); }; if (document.readyState === 'complete') { l(); } else if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })();
   </script>
+
+  
   <div class="ms-style" style="position: relative; z-index: 2147483645;">
     <div id="ms-loader" class="ms-loader" style="display:none">
       <div class="ms-ellipsis">
