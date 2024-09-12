@@ -24,6 +24,14 @@
     animation: marquee 2s linear infinite; /* Adjust duration to control speed */
 }
 
+.marquee-inner1 {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  width: fit-content; /* Twice the width of the viewport to ensure seamless loop */
+  animation: marquee 10s linear infinite; /* Adjust duration to control speed */
+}
+
 .marquee-item {
     display: inline-block;
     margin-right: 30px; /* Space between images */
@@ -42,6 +50,7 @@
         transform: translateX(-50%);
     }
 }
+
 
 
 .hero__images-wrapper {

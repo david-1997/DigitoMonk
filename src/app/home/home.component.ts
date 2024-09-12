@@ -16,4 +16,9 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  resetPosition() {
+    let myDiv = document.getElementById("detail");
+    myDiv.scrollTop = 0;
+  }
+
 }

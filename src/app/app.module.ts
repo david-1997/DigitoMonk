@@ -16,6 +16,10 @@ import { EcategoryComponent } from './ecategory/ecategory.component';
 import {ReactiveFormsModule,FormsModule} from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { SocialComponent } from './social/social.component';
+import { WebDesignComponent } from './web-design/web-design.component';
+// import { LightgalleryModule } from 'lightgallery/angular';
+import { LightgalleryModule } from 'lightgallery/angular/9';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +33,8 @@ import { SocialComponent } from './social/social.component';
     GcategoryComponent,
     EcategoryComponent,
     HomeComponent,
-    SocialComponent
+    SocialComponent,
+    WebDesignComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +42,8 @@ import { SocialComponent } from './social/social.component';
     HttpClientModule,
     RouterModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    LightgalleryModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,6 +11,7 @@ import { EcategoryComponent } from './ecategory/ecategory.component';
 import { GcategoryComponent } from './gcategory/gcategory.component';
 import { HomeComponent } from './home/home.component';
 import { SocialComponent } from './social/social.component';
+import { WebDesignComponent } from './web-design/web-design.component';
 
 
 const routes: Routes = [
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path : "social",
     component:SocialComponent
+  },
+  {
+    path : "graphicdesign",
+    component:WebDesignComponent
   }
   // {
   //   path:"product/:id",
@@ -53,7 +58,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{scrollPositionRestoration: 'enabled'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
