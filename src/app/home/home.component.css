@@ -21,7 +21,7 @@
     align-items: center;
     white-space: nowrap;
     width: 200%; /* Twice the width of the viewport to ensure seamless loop */
-    animation: marquee 2s linear infinite; /* Adjust duration to control speed */
+    animation: marquee 5s linear infinite; /* Adjust duration to control speed */
 }
 
 .marquee-inner1 {
@@ -29,12 +29,12 @@
   align-items: center;
   white-space: nowrap;
   width: fit-content; /* Twice the width of the viewport to ensure seamless loop */
-  animation: marquee 10s linear infinite; /* Adjust duration to control speed */
+  animation: marquee 13s linear infinite; /* Adjust duration to control speed */
 }
 
 .marquee-item {
     display: inline-block;
-    /* margin-right: 30px; Space between images */
+    margin-right: 30px; 
 }
 
 .marquee-item img {
@@ -63,6 +63,18 @@
 .hero__image-wrapper {
   /* display: inline-block; */
   margin-right: 10px; /* Space between images */
+}
+
+@media screen and (max-width: 767px) {
+  .marquee-item {
+    display: inline-block;
+    margin-right: 5px; 
+}
+
+#dent{
+  /* width: 250px !important;
+    height: 50px !important; */
+}
 }
 
 /* .hero__image-wrapper img {
