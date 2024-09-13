@@ -12,7 +12,7 @@
     /* height: 150px; Adjust height as needed */
     overflow: hidden;
     background-color: #fff;
-    padding: 25px;
+    padding: 5px;
     border-radius: 50px;
 }
 
@@ -34,12 +34,12 @@
 
 .marquee-item {
     display: inline-block;
-    margin-right: 30px; /* Space between images */
+    /* margin-right: 30px; Space between images */
 }
 
 .marquee-item img {
     height: auto;
-    width: 20px; /* Adjust width as needed */
+    width: 20px; 
 }
 
 @keyframes marquee {
